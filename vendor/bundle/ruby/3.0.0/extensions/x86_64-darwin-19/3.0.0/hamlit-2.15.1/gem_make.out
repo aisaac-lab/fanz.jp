@@ -1,0 +1,20 @@
+current directory: /Users/gogo/work/fans-images/vendor/bundle/ruby/3.0.0/gems/hamlit-2.15.1/ext/hamlit
+/Users/gogo/.rbenv/versions/3.0.0/bin/ruby -I /Users/gogo/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210906-4912-e53vyg.rb extconf.rb
+creating Makefile
+
+current directory: /Users/gogo/work/fans-images/vendor/bundle/ruby/3.0.0/gems/hamlit-2.15.1/ext/hamlit
+make "DESTDIR=" clean
+
+current directory: /Users/gogo/work/fans-images/vendor/bundle/ruby/3.0.0/gems/hamlit-2.15.1/ext/hamlit
+make "DESTDIR="
+compiling hamlit.c
+hamlit.c:61:10: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'unsigned int' [-Wshorten-64-to-32]
+  size = hesc_escape_html(&buf, RSTRING_PTR(str), RSTRING_LEN(str));
+       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+compiling hescape.c
+linking shared-object hamlit/hamlit.bundle
+
+current directory: /Users/gogo/work/fans-images/vendor/bundle/ruby/3.0.0/gems/hamlit-2.15.1/ext/hamlit
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hamlit.bundle ./.gem.20210906-4912-zbvjyd/hamlit
