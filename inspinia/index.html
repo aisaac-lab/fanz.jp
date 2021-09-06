@@ -57,7 +57,7 @@
                     <li class="active">
                         <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">ダッシュボード</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active"><a href="index.html">ダッシュボード</a></li>
+                            <li class="active"><a href="index.html">購入管理</a></li>
 
                         </ul>
                     </li>
@@ -195,11 +195,20 @@
         </div>
             <div class="wrapper wrapper-content">
         <div class="row">
+            <div class="col-lg-6">
+            <h3>FANZマガジン記事購入</h3>
+            <h3>金額: 500円(税込)</h3>
+            <p><a href="https://fanz.jp/trade.html">特定商取引法に基づく表示</a>と<a href="https://fanz.jp/terms.html">利用規約</a>をよくご確認の上、ご購入ください。</p>
+            <p>電子商品としての性質上、返品には応じられません。＊ダウンロードに異常がある場合は除く</p>
+        </div>
+        </div>
+            <div class="row">
+
             <form action="/charge" method="POST">
                 <script
                     src="https://multipay.komoju.com" class="komoju-button"
                     data-key="sk_test_axgynbtj4t0ki2dbrluf4wlj"
-                    data-amount="1000"
+                    data-amount="500"
                     data-endpoint="https://fanz.jp/api/charge.json"
                     data-currency="JPY"
                     data-locale="en"
@@ -208,6 +217,7 @@
                     data-methods="credit_card">
                 </script>
               </form>
+            </div>
         </div>
             <div class="footer">
 
